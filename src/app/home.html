@@ -1,0 +1,46 @@
+
+<header id="header">
+	<h1>{{title}}</h1>
+	<div class="clearfix"></div>
+</header>
+<div class="contenedor">
+<div class="izq">
+	<nav id="nav">
+		<ul>
+			<li id="ventas"><img [class.changeImageVentas]="opcionSeleccionada==='v'" 
+			src="assets/img/ventas_1.png"/><a 
+			(click)="opcionSeleccionada('v')"
+			[class.menuSelected]="optionSelected==='v'" [routerLink]="['/ventas']">Ventas</a></li>
+			<li id="nuevaVenta"><img src="assets/img/nuevaVenta_1.png"/><a 
+			(click)="opcionSeleccionada('n')"
+			[class.menuSelected]="optionSelected==='n'" [routerLink]="['/nueva-venta']">Nueva Venta</a></li>
+			<li><img src="assets/img/abono_1.png"/><a
+			(click)="opcionSeleccionada('a')"
+			[class.menuSelected]="optionSelected==='a'" >Abonos</a></li>
+			<hr>
+			<li id="Proveedores"><img src="assets/img/proveedor_1.png"/><a
+			(click)="opcionSeleccionada('p')"
+			[class.menuSelected]="optionSelected==='p'" >Proveedores</a></li>
+			<hr>
+			<li><img src="assets/img/inventario_1.png"/><a
+			(click)="opcionSeleccionada('i')"
+			[class.menuSelected]="optionSelected==='i'" >Inventario</a></li>
+			<hr>
+			<li><img src="assets/img/gastos_1.png"/><a
+			(click)="opcionSeleccionada('g')"
+			[class.menuSelected]="optionSelected==='g'" >Gastos</a></li>
+			<li><img src="assets/img/informe_1.png"/><a
+			(click)="opcionSeleccionada('in')"
+			[class.menuSelected]="optionSelected==='in'" >Informes</a></li>
+			<hr>
+			<li><img src="assets/img/informe_1.png"/><a
+			(click)="opcionSeleccionada('c')"
+			[class.menuSelected]="optionSelected==='c'" >Configuración</a></li>
+		</ul>
+	</nav>
+</div>
+<div class="der">
+	<router-outlet></router-outlet>
+	<div class="clearfix"></div>
+</div>
+</div>

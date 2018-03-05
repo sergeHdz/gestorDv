@@ -1,0 +1,92 @@
+<h1 id="titulo">{{titulo}}</h1>
+<p id="folio">Folio <span>{{folio}}</span></p>
+<div class="clearfix"></div>
+<div class="nvdatos">
+	<div class="nvdato">
+	<label class="nvdato2">Nombre</label>
+	 <input type="text">
+  	</div>
+  	<div class="nvdato">
+	<label class="nvdato2">Apellido Paterno</label>
+	 <input type="text">
+  	</div>
+  	<div class="nvdato">
+	<label class="nvdato2">Apellido Materno</label>
+	 <input type="text">
+  	</div>
+  	<div class="nvdato">
+	<label class="nvdato2">Dirección</label>
+	 <input type="text">
+  	</div>
+  	<div class="nvdato">
+	<label class="nvdato2">Telefono</label>
+	<input type="text">
+  	</div>
+  	<div class="nvdato">
+	<label class="nvdato2">Tipo de Venta</label>
+  <select  #precio name="precio" id="selectTP">
+    <option value="CR" >Apartado</option>
+    <option value="CO" >Contado</option>
+  </select>
+  	</div>
+</div>
+<div class="clearfix"></div>
+<div class="compra">
+  <div class="listMuebles">
+    <ul>
+      <li>Sabanero <button id="plus2">+</button></li>
+      <li>Zapatero <button id="plus2">+</button></li>
+      <li><a >Tocador</a> <button id="plus2">+</button></li>
+      <li><a >Librero</a><button id="plus2">+</button></li>
+      <li><a >Modular</a><button id="plus2">+</button></li>
+      <li><a >Cajonera</a><button id="plus2">+</button></li>
+      <li><a >Roma</a><button id="plus2">+</button></li>
+      <li><a >Vitrina</a><button id="plus2">+</button></li>
+      <li><a >Buro</a><button id="plus2">+</button></li>
+      <li><a >Junior</a><button id="plus2">+</button></li>
+      <li><a >Mesa</a><button id="plus2">+</button></li>
+      <li><a >Base</a><button id="plus2">+</button></li>
+    </ul>
+  </div>
+  <div class="resumen">
+    <div class="table">
+        <table>
+        <tr>
+          <th>Cantidad</th>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Subtotal</th>
+        </tr>
+        <tr>
+          <td>Peter</td>
+          <td>Griffin</td>
+          <td>$100</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Lois</td>
+          <td>Griffin</td>
+          <td>$150</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Joe</td>
+          <td>Swanson</td>
+          <td>$300</td>
+          <td>$300</td>
+        </tr>
+        <tr>
+          <td>Cleveland</td>
+          <td>Brown</td>
+          <td>$250</td>
+          <td>$100</td>
+        </tr>
+      </table>
+    </div>
+  <div class="aceptarVenta">
+    <span>Total ${{total}}</span>
+    <button>Aceptar</button>
+  </div>
+  <div class="clearfix"></div>
+  </div>
+</div>

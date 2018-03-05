@@ -1,0 +1,70 @@
+<h1 id="titulo">{{titulo}}</h1>
+<div class="clearfix"></div>
+<div class="nvdatos">
+	<div class="nvdato">
+	<label class="nvdato2">Fecha inicio</label>
+	 <input type="date">
+  	</div>
+  	<div class="nvdato">
+	<label class="nvdato2">Fecha fin</label>
+	 <input type="date">
+  	</div>
+  	<div class="nvdato,aceptarVenta">
+	<button>Ver ventas</button>
+  	</div>
+</div>
+<div class="clearfix"></div>
+<p id="folio">Folio <span>{{folio}}</span></p>
+<div class="clearfix"></div>
+<div class="filtroVenta"> 
+Filtros:
+<p><input type="checkbox" name="vehicle" value="Bike"> Contado          <input type="checkbox" name="vehicle" value="Bike"> Apartados         <input type="checkbox" name="vehicle" value="Bike"> Apartados Pagados         <input type="checkbox" name="vehicle" value="Bike"> Apartados sin pagar</p>
+</div>
+
+<div class="ventas">
+  <div class="resumen">
+    <div class="table">
+        <table>
+        <tr>
+          <th>Fecha</th>
+          <th>Nombre Cliente</th>
+          <th>Total</th>
+          <th>Tipo</th>
+          <th>Estado</th>
+        </tr>
+        <tr>
+          <td>Peter</td>
+          <td>Griffin</td>
+          <td>$100</td>
+          <td>$100</td>
+          <td>Pagado</td>
+        </tr>
+        <tr>
+          <td>Lois</td>
+          <td>Griffin</td>
+          <td>$150</td>
+          <td>$100</td>
+          <td>Sin Pagadar</td>
+        </tr>
+        <tr>
+          <td>Joe</td>
+          <td>Swanson</td>
+          <td>$300</td>
+          <td>$300</td>
+          <td>Cancelado</td>
+        </tr>
+        <tr>
+          <td>Cleveland</td>
+          <td>Brown</td>
+          <td>$250</td>
+          <td>$100</td>
+          <td>Pagado</td>
+        </tr>
+      </table>
+    </div>
+  <div class="aceptarVenta">
+    <span>Total ${{total}}</span>
+  </div>
+  <div class="clearfix"></div>
+  </div>
+</div>
